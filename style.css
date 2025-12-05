@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cityInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#searchBtn {
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background: #5568d3;
+}
+
+.weather-display {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.weather-icon img {
+    width: 120px;
+    height: 120px;
+}
+
+#cityName {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.temperature {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #667eea;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.error-message {
+    text-align: center;
+    padding: 20px;
+    background: #ffe6e6;
+    border: 1px solid #ffcccc;
+    border-radius: 10px;
+    color: #cc0000;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .weather-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    #searchBtn {
+        width: 100%;
+    }
+
+    #cityName {
+        font-size: 1.5rem;
+    }
+
+    .temperature {
+        font-size: 2.5rem;
+    }
+}
