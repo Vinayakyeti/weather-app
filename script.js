@@ -1,5 +1,5 @@
-// API key will be loaded from .env file
-const API_KEY = 'YOUR_API_KEY_HERE';
+// API key from environment variable
+const API_KEY = '84254d5ce02335eb1d0ed7c9393e2ebb';
 const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
 const weatherDisplay = document.getElementById('weatherDisplay');
